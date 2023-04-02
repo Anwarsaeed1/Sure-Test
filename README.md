@@ -9,23 +9,23 @@
 
 ## Sure Project
 
-1-git clone project 
-2-handel the .env
-3-generate key
-4-php artisan migrate
-4- php artisan db:seed
-5-Unit test :- vendor/bin/phpunit or composer test
+- git clone project 
+- handel the .env
+- generate key
+- php artisan migrate
+- php artisan db:seed
+- Unit test :- vendor/bin/phpunit or composer test
 
-Define Project
+##  Define Project
 ---------------
-Simple Module Item to Create and Update and Edit ,Delete Change Code In Files,
-1-Controller
-2-Request
-3-Api.php
-4-Handler 
-5-Interface 
-6-Repositories
-7-Model
-8-DatabaseSeeder
-9-Migration
+- Simple Module Item to Create and Update and Edit ,Delete Change Code In Files,
+- Controller
+- Request
+- Api.php
+- Handler 
+- Interface 
+- Repositories
+- Model
+- DatabaseSeeder
+- Migration
 etc..
