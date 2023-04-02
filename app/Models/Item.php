@@ -34,8 +34,8 @@ class Item extends Model
      */
     protected $casts = [
         'is_active' => 'boolean',
-        'created_at' => 'datetime:m-d-Y g:i A',
-        'updated_at' => 'datetime:m-d-Y g:i A',
+        // 'created_at' => 'datetime:m-d-Y g:i A', @Use Cast Or Set And Get Like Down
+        // 'updated_at' => 'datetime:m-d-Y g:i A', @Use Cast Or Set And Get  Like Down
     ];
     /**
      * Item Name Attribute function
@@ -89,28 +89,28 @@ class Item extends Model
         );
     }
 
-    //  /**
-    //  * Create At Attribute function
-    //  *
-    //  * @return Attribute
-    //  */
-    // protected function createdAt(): Attribute
-    // {
-    //     return Attribute::make(
-    //        get: fn ($value) => Carbon::createFromFormat('Y-m-d H:i:s', $value)->format('m-d-Y g:i A'),
-    //     );
-    // }
-    //   /**
-    //  * Create At Attribute function
-    //  *
-    //  * @return Attribute
-    //  */
-    // protected function updatedAt(): Attribute
-    // {
-    //     return Attribute::make(
-    //        get: fn ($value) => Carbon::createFromFormat('Y-m-d H:i:s', $value)->format('m-d-Y g:i A'),
-    //     );
-    // }
+     /**
+     * Create At Attribute function
+     *
+     * @return Attribute
+     */
+    protected function createdAt(): Attribute
+    {
+        return Attribute::make(
+           get: fn ($value) => Carbon::createFromFormat('Y-m-d H:i:s', $value)->format('m-d-Y g:i A'),
+        );
+    }
+      /**
+     * Create At Attribute function
+     *
+     * @return Attribute
+     */
+    protected function updatedAt(): Attribute
+    {
+        return Attribute::make(
+           get: fn ($value) => Carbon::createFromFormat('Y-m-d H:i:s', $value)->format('m-d-Y g:i A'),
+        );
+    }
    
 
 }
