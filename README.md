@@ -29,3 +29,6 @@
 - DatabaseSeeder
 - Migration
 etc..
+
+
+- [POSTMAN_COLLECTION]https://api.postman.com/collections/9381437-f6af9744-423d-458f-9f39-0481699f4639?access_key=PMAT-01GWZP48VTPQ1BDV1W0VHN0JSW
